@@ -27,3 +27,6 @@ select
 ```
 
 ## Create your Pipeline project in Blue Ocean
+
+## Reference
+  * https://jenkins.io/doc/tutorials/build-a-multibranch-pipeline-project
