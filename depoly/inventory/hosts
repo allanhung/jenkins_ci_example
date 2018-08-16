@@ -1,0 +1,5 @@
+[prod]
+localhost ansible_connection=local
+
+[dev]
+localhost ansible_connection=local

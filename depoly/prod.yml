@@ -1,0 +1,8 @@
+---
+- name: depoly
+  hosts: prod
+  gather_facts: False
+  tasks:
+    - name: debug
+      debug:
+        msg: "test"
