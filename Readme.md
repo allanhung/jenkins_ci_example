@@ -2,6 +2,8 @@
 
 This repository will show you how to integration github and jenkins.
 
+![alt text](https://github.com/allanhung/jenkins_ci_example/raw/master/jenkins_workflow.png "jenkins workflow")
+
 ## Run Jenkins
 
 Run the jenkinsci/blueocean image as a container
@@ -27,6 +29,8 @@ select
 ```
 
 ## Create your Pipeline project in Blue Ocean
+* Fork and clone this sample repository on github
+* Create a new pipeline with blueocean pipeline creation wizard.
 
 ## Reference
   * https://jenkins.io/doc/tutorials/build-a-multibranch-pipeline-project
