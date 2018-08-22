@@ -19,6 +19,19 @@ docker run \
   jenkinsci/blueocean
 ```
 
+Example to build plugin for jenkins
+```bash
+mkdir plugin_build && git clone https://github.com/AngryBytes/jenkins-build-everything-strategy-plugin
+cd plugin_build/jenkins-build-everything-strategy-plugin
+docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn package
+cp target/build-everything-strategy.hpi ../../jenkins-data/plugins
+```
+
+Example restart jenkins
+```bash
+http://xxx/safeRestart
+```
+
 ## Generate github access token
 github --> setting --> Personal Access Token --> Generate new token
 ```bash
