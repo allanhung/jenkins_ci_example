@@ -43,6 +43,12 @@ select
 
 ## Create your Pipeline project in Blue Ocean
 * Fork and clone this sample repository on github
+* add webhook to jenkins server
+```bash
+Payload URL: http://xxx/github-webhook/
+Content type: application/json
+Which events would you like to trigger this webhook:  Just the push event. 
+```
 * Create a new pipeline with blueocean pipeline creation wizard.
 
 ## Reference

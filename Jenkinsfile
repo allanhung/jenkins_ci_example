@@ -30,7 +30,7 @@ pipeline {
     }
     stage('Deploy for production') {
       when {
-        branch 'master'  
+        tag '*'  
       }
       steps {
         sh 'ansible-playbook -i depoly/inventory/hosts depoly/prod.yml'
